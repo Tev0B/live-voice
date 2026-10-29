@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Выбор голосовой сессии</title><link rel="stylesheet" href="/style.css"><script src="/config.js"></script>
+</head>
+<body>
+  <main>
+    <div id="status" class="status" role="status" aria-live="polite">Подключаемся к серверу…</div>
+    <div id="session-list" class="session-list" aria-label="Активные сессии"></div>
+    <button id="enable-sound" class="secondary" hidden>Включить звук</button>
+    <button id="back" class="secondary" hidden>Назад к сессиям</button>
+    <audio id="audio" autoplay playsinline></audio>
+  </main>
+  <script src="/listen.js"></script>
+</body>
+</html>
