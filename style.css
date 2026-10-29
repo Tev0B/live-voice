@@ -1,0 +1,23 @@
+:root { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #f4f6fb; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 18px; }
+main { width: min(100%, 500px); padding: 24px; background: #fff; border: 1px solid #e5e9f2; border-radius: 20px; box-shadow: 0 15px 45px #22345b12; }
+button { appearance: none; border: 0; border-radius: 12px; padding: 14px 18px; min-height: 48px; background: #3658e8; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+button:disabled { opacity: .55; cursor: wait; }
+button.stop { background: #bd3448; }
+#toggle { width: 100%; }
+.status { min-height: 24px; margin-top: 16px; font-size: 1rem; font-weight: 700; text-align: center; }
+.status[data-state="active"] { color: #147a4b; }
+.status[data-state="waiting"] { color: #9a5b00; }
+.status[data-state="error"] { color: #b42332; }
+.session-list { display: grid; gap: 10px; margin-top: 16px; }
+.session-item { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #f0f3ff; color: #1d2b54; border: 1px solid #dfe5ff; }
+.session-item:hover { background: #e7ecff; }
+.session-name { font-weight: 700; }
+.session-meta { font-size: .88rem; font-weight: 500; opacity: .75; white-space: nowrap; }
+.empty { color: #667085; text-align: center; padding: 16px 6px; }
+.secondary { background: #eef1f6; color: #344054; width: 100%; margin-top: 12px; }
+[hidden] { display: none !important; }
+audio { display: none; }
+
+.surprise-banner { margin: 0 0 20px; text-align: center; font-size: clamp(1.05rem, 4vw, 1.35rem); line-height: 1.35; font-weight: 800; color: #243b8a; }
