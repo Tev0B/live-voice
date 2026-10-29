@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: live-voice-sessions-public
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MAX_LISTENERS_PER_SESSION
+        value: "10"
